@@ -17,3 +17,16 @@ print(np.random.uniform(
 ))
 
 # np.random.seed() vs rng=np.random.default_rng()?
+
+rng=np.random.default_rng
+array=np.array([1,2,3,4,5])
+rng.shuffle(array)
+print(array)
+
+
+
+# Random choice 
+fruits = np.array(["apple", "orange", "coconut"])
+fruit=rng.choice(fruits)
+fruits=rng.choice(fruits,size=3)
+fruits=rng.choice(fruits,size=(3,2))
